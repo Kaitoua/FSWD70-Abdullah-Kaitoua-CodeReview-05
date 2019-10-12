@@ -3,40 +3,40 @@ var moviesdata=[ {
             "mylist":"All",
             "title":"Inception",
             "description":"A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O. ",
-            "like": 97       
+            "like": 87       
         },{
             "img":"img/bs.jpg",
             "mylist":"All",
             "title":"Black Swan",
             "description":"A committed dancer struggles to maintain her sanity after winning the lead role in a production of Tchaikovsky's Swan Lake. ",
-            "like": 96 
+            "like": 86 
         },{
 
             "img":"img/gravity.jpg",
             "mylist":"All",
             "title":"Gravity",
             "description":"Two astronauts work together to survive after an accident leaves them stranded in space. ",
-            "like": 98 
+            "like": 88 
         },{
 
             "img":"img/elcamino.jpg",
             "mylist":"All",
             "title":"El Camino: A Breaking Bad Movie",
             "description":"After escaping Jack and his gang, Jesse Pinkman goes on the run from the police and tries to escape his own inner turmoil.",
-            "like": 99
+            "like": 89
         },{
 
             "img":"img/sm.jpg",
             "mylist":"All",
             "title":"Slumdog Millionaire",
             "description":"A Mumbai teenager reflects on his life after being accused of cheating on the Indian version of Who Wants to be a Millionaire?",
-            "like": 92 
+            "like": 82 
         },{
             "img":"img/abm.jpg",
             "mylist":"All",
             "title":"A Beautiful Mind",
             "description":"After John Nash, a brilliant but asocial mathematician, accepts secret work in cryptography, his life takes a turn for the nightmarish.",
-            "like": 90 
+            "like": 80 
         }
 
 ];

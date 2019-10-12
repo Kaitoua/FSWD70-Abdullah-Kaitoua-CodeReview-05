@@ -20,7 +20,7 @@ $(document).ready(function(){
 
 	
 	        <div class="text-right col-md-3 ml-auto dropdown"><!-- the dropdown sort box-->
-	            <button class="btn btn-info dropdown-toggle text-white" type="button" data-toggle="dropdown">
+	            <button class="btn btn-basic dropdown-toggle text-white" type="button" data-toggle="dropdown">
 	            Sort
 	            <span class="caret"></span></button>
 	            <ul class="dropdown-menu bg-dark">
