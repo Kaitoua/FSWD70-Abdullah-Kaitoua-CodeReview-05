@@ -98,12 +98,13 @@ $(document).ready(function(){
 	`;
    $("body").append(div);
 
-
+//i store the div of the data in var
 	var maindiv = $('.divofdata');
-
-	
-
-	function resort(x,y)
+//sort the data and create according to the json 
+	moviesdata.sort(resort);
+	create(moviesdata);
+//function to compare the values and sort
+function resort(x,y)
 	{
 
 		if(x.like < y.like){return 1;}
@@ -113,45 +114,45 @@ $(document).ready(function(){
 			}
 
 	}
-	
-	moviesdata.sort(resort);
-	create(moviesdata);
-//function data from json to html page
+//main function data from json to html page
 	function create(x){
 
 		for(let i = 0; i < maindiv.length; i++){
-			$(maindiv[i]).html(` <div class="row">              
-			    <div class="img-responsive col-lg-7 "> 
+			$(maindiv[i]).html(` <div class="row myr">              
+			    <div class="img-responsive col-lg-7"> 
 			        <img height="350" width="250" src="${x[i].img}" alt="${x[i].title}">
 			    </div>
 
 			        <div class="col-lg-5  text-white">
-			        	<h5 class="title">${x[i].title}</h5>
+			        	<h5 class=" text-info title">${x[i].title}</h5>
 							<p><small>${x[i].description}</small></p>
 
-			            <div class="text-right text-info">
-			                  <span class="thump"> Like <i class="fas fa-thumbs-up"></i> 
-			                 	 <span class="text-info likecounter">${x[i].like}</span>
-			                  </span>
+			            <div class="text-right text-info myb">
+			                  <p class="thump"> Like <i class="fas fa-thumbs-up"></i> 
+			                 	 <span style="font-size:30px"class="rounded-circle bg-info btn text-white likecounter">${x[i].like}</span>
+			                  </p>
 			           </div>
 
 			        </div>
 			  </div>`);
-
+		
+   
+                    
+               
 		}
 
-		var like = $(".thump");
-		var count = $(".likecounter");
+		var like = $(".thump"); //array store in var to reach each
+		var count = $(".likecounter"); //array store in var to write over the values 
 
 
 		for(let i = 0; i < maindiv.length; i++){
 
 			$(like[i]).on('click', function(){
 
-					++moviesdata[i].like;
-					console.log(like[i])
-
+					++moviesdata[i].like; // add like
 					$(count[i]).text(moviesdata[i].like);
+
+					//update the sort when you click
 
 					$('.mostliked').on('click' ,function(){
 						
@@ -162,8 +163,6 @@ $(document).ready(function(){
 
 
 			});
-
-
 
 		}
 
